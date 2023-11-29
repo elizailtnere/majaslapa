@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Politiskie režīmi</title>
+    <title>Politika</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
@@ -15,27 +15,49 @@
     .container {
       background-color: rgb(160, 152, 143);
     }
+    .row2 {
+      background-color: rgb(42, 62, 214);
+    }
+
   </style>
     <script>
-  function RaditSaturu(){
-  document.getElementById("RadamaisSaturs").style.display = "block";
-  document.getElementById("PogaRadit").style.display = "none";
+  function RaditSaturu1(){
+  document.getElementById("RadamaisSaturs1").style.display = "block";
+  document.getElementById("PogaRadit1").style.display = "none";
  }
-  function PasleptSaturu(){
-  document.getElementById("RadamaisSaturs").style.display = "none";
-  document.getElementById("PogaRadit").style.display = "block";
+  function PasleptSaturu1(){
+  document.getElementById("RadamaisSaturs1").style.display = "none";
+  document.getElementById("PogaRadit1").style.display = "block";
+}
+function RaditSaturu2(){
+  document.getElementById("RadamaisSaturs2").style.display = "block";
+  document.getElementById("PogaRadit2").style.display = "none";
+ }
+  function PasleptSaturu2(){
+  document.getElementById("RadamaisSaturs2").style.display = "none";
+  document.getElementById("PogaRadit2").style.display = "block";
+}
+function RaditSaturu3(){
+  document.getElementById("RadamaisSaturs3").style.display = "block";
+  document.getElementById("PogaRadit3").style.display = "none";
+ }
+  function PasleptSaturu3(){
+  document.getElementById("RadamaisSaturs3").style.display = "none";
+  document.getElementById("PogaRadit3").style.display = "block";
 }
     </script>
     </head>
     <body>
       <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col-sm-8">
+          <div class="col-sm-4">
             <h2>Politiskie režīmi</h2>
             <h5 >Demokrātija, Autoritārisms, Totalitārisms</h5>
           </div>
-          <div class="col-sm-4">
-            <img src='https://www.brides.com/thmb/Vf6h8EcxYuqNjJ9-GOtbFZx-yLk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-preserve-roses-unsplash-june-2023-f9dd34e2dd3e416580295ce9ca524856.jpg'class="rounded-circle"width="200" height="200"> 
+          <div class="col-sm-8">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="150" height="150">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="150" height="150">
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="150" height="150">
           </div>
         </div>
           <div class="row">
@@ -49,25 +71,87 @@
                   <div class="col">
                     <h6>Demokrātija</h6>             
                     <p>Tektssssssssssssssssssss</p>
-                    <p>Tekstsssss2</p>
+                    <button id="PogaRadit1" onclick="RaditSaturu1()">RaditVairak</button>
+                    <div id="RadamaisSaturs1">
+                      <p>Tekstsssssssss2</p>
+                      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="100" height="100">
+                    <button onclick="PasleptSaturu1()">RaditMazak</button>
+                    </div>
                   </div>
                   <div class="col">
                     <h6>Autoritārisms</h6>
                     <p>Tekstssssssssssssssss</p>
-                    <P>Tekstsssssss2</P>
+                    <button id="PogaRadit2" onclick="RaditSaturu2()">RaditVairak</button>
+                    <div id="RadamaisSaturs2">
+                      <p>Tekstsssssssss2</p>
+                      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="100" height="100">
+                    <button onclick="PasleptSaturu2()">RaditMazak</button>
+                    </div>
                   </div>
                   <div class="col">
                     <h6>Totalitārisms</h6>
                     <p>Tekssssssssssssss</p>
-                     <button id="PogaRadit" onclick="RaditSaturu()">RaditVairak</button>
-        <div id="RadamaisSaturs">
+                     <button id="PogaRadit3" onclick="RaditSaturu3()">RaditVairak</button>
+                  <div id="RadamaisSaturs3">
                     <p>Tekstsssssssss2</p>
-                  <button onclick="PasleptSaturu()">RaditMazak</button>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1200px-Hammer_and_sickle.svg.png' width="100" height="100">
+                  <button onclick="PasleptSaturu3()">RaditMazak</button>
                   </div>
                 </div>
               </div>
-            
-    
+              <div class="row2" >
+                <div class="col">
+                  <h5>Inormācijas avoti</h5>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                  <a href="http://www.rag.lv/"> LINKS</a>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <caption>Mums vajadzēs tabulu un nummureetu sarakstu</caption>
+                    <style>
+                      table, th, td {
+                        border: 2px solid rgb(209, 28, 28);
+                      }
+                      td {
+                        color: rgb(228, 225, 180);
+                      } 
+                      tr {
+                        background-color: rgb(255, 0, 191);
+                      } 
+                    </style>
+                  <table style="width:100%">
+                      <tr>
+                          <th>1</th>
+                          <th>2</th>
+                          <th>3</th>
+                      <tr>
+                        <td >k</td>
+                        <td>k</td>
+                        <td>k</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="col">
+                    <ol>
+                      <li>k</li>
+                      <li>k</li>
+                      <ul>
+                          <li>kkas</li>
+                        </ul>
+                      <li>kkas </li>
+                    </ol>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+                
             </div>
           </div>
       </div>
