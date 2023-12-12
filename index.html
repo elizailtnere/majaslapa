@@ -60,15 +60,12 @@
         border: 2px solid #7d8783;
       }      
     </style>
-        <script>
-            function myFunction() {
-            var x = document.getElementById("mySelect").value;
-            document.getElementById("demo").innerHTML = "You selected: " + x;
-          }           
+        <script>    
             function RaditSaturu1(){
             document.getElementById("RadamaisSaturs1").style.display = "block";
             document.getElementById("PogaRadit1").style.display = "none";
             document.getElementById("mainas").src = 'https://cdn.theatlantic.com/thumbor/uKykjvsHQH27udABpk8WGx463os=/0x256:3231x2073/1600x900/media/img/mt/2017/11/GettyImages_517331826/original.jpg';
+            
           }
             function PasleptSaturu1(){
             document.getElementById("RadamaisSaturs1").style.display = "none";
@@ -118,20 +115,11 @@
         <div class="row p-3" id="borderAUGSA">
             <div class="col text-center" id="rounded">
               <h4 class="p-3 ">Demokrātija</h4>
-                <img src= 'https://lvportals.lv/wwwraksti//TEMAS/2011/DECEMBRIS/BILDES_LIELAS/4-A-1.JPG'class="text-center" width="300px" height="150px">
-                  <p>Select a new car from the list.</p>
+              <p id="demo" style="display:none">Hello JavaScript!</p>
 
-<select id="mySelect" onchange="myFunction()">
-  <option value="Audi               oooo">JJJJJ</option>
-  <option value="BMW     ooo">AAAAA</option>
-  <option value="Mercedes">BBBBBBB</option>
-  <option value="Volvo">ZZZZZZZZZ</option>
-</select>
-
-<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
-
-<p id="demo"></p>                  
-              <p class="p-3 text-center">Politiskas izcelsmes jēdziens, politiskais režīms, kas saistīts ar valsts pārvaldi un kas kā lēmumu pieņemšanas princips var tikt attiecināts uz dažādām, tostarp nepolitiskām, organizācijām – ģimeni vai uzņēmumu; svarīgākais demokrātiskā lēmumu pieņemšanā ir visu iesaistīto līdzdalība lēmumu pieņemšanā, vienlīdzība, atklāta diskusija un vairākuma vara saskaņā ar balsojumu</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>                
+              <img src= 'https://lvportals.lv/wwwraksti//TEMAS/2011/DECEMBRIS/BILDES_LIELAS/4-A-1.JPG'class="text-center" width="300px" height="150px">
+                  <p class="p-3 text-center">Politiskas izcelsmes jēdziens, politiskais režīms, kas saistīts ar valsts pārvaldi un kas kā lēmumu pieņemšanas princips var tikt attiecināts uz dažādām, tostarp nepolitiskām, organizācijām – ģimeni vai uzņēmumu; svarīgākais demokrātiskā lēmumu pieņemšanā ir visu iesaistīto līdzdalība lēmumu pieņemšanā, vienlīdzība, atklāta diskusija un vairākuma vara saskaņā ar balsojumu</p>
                   <h class="text-center" style="font-weight:bold; font-family: 'Times New Roman', Times, serif;"> Pirmsākumi: </h>
                     <button id="PogaRadit1" onclick="RaditSaturu1()">Rādīt vairāk</button>
                       <div id="RadamaisSaturs1">
